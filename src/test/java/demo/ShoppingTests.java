@@ -7,11 +7,11 @@ import org.testng.annotations.Test;
 public class ShoppingTests {
     @BeforeClass
     public void beforeClass(){
-        System.out.println("I execute Before ShoppingTests class");
+        System.out.println("Before ShoppingTests class executed");
     }
     @AfterClass
     public void afterClass(){
-        System.out.println("I execute After ShoppingTests class");
+        System.out.println("After ShoppingTests class executed");
     }
     @Test
     public void productSearch(){
