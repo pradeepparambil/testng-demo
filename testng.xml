@@ -2,6 +2,16 @@
 
 <suite name="MyShop" verbose="1" >
     <test name="Tests in Chrome" >
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="os" value="windows"></parameter>
+        <classes>
+            <class name="demo.LoginTests" />
+            <class name="demo.ShoppingTests" />
+        </classes>
+    </test>
+    <test name="Tests in Firefox" >
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="os" value="linux"></parameter>
         <classes>
             <class name="demo.LoginTests" />
             <class name="demo.ShoppingTests" />

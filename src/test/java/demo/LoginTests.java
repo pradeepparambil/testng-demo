@@ -6,7 +6,7 @@ import org.testng.SkipException;
 import org.testng.annotations.*;
 
 public class LoginTests {
-    @BeforeSuite
+    @BeforeSuite()
     public void beforeSuite(){
         System.out.println("I execute before Suite");
     }
@@ -14,9 +14,12 @@ public class LoginTests {
     public void afterSuite(){
         System.out.println("I execute After Suite");
     }
-    @BeforeTest
-    public void beforeTest(){
+    @Parameters({"browser","os"})
+    @BeforeTest()
+    public void beforeTest(String browser,String os){
         System.out.println("I execute Before Test");
+        System.out.println("Browser : " + browser);
+        System.out.println("OS : " + os);
     }
     @AfterTest
     public void afterTest(){
