@@ -7,5 +7,11 @@
             <class name="demo.ShoppingTests" />
         </classes>
     </test>
+    <test name="Tests in Firefox" >
+        <classes>
+            <class name="demo.LoginTests" />
+            <class name="demo.ShoppingTests" />
+        </classes>
+    </test>
 
 </suite>
