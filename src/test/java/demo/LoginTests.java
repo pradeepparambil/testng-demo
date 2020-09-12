@@ -6,6 +6,25 @@ import org.testng.SkipException;
 import org.testng.annotations.*;
 
 public class LoginTests {
+    @BeforeSuite
+    public void beforeSuite(){
+        System.out.println("I execute before Suite");
+    }
+    @AfterSuite
+    public void afterSuite(){
+        System.out.println("I execute After Suite");
+    }
+    @BeforeTest
+    public void beforeTest(){
+        System.out.println("I execute Before Test");
+    }
+    @AfterTest
+    public void afterTest(){
+        System.out.println("I execute After Test");
+    }
+
+
+
     @BeforeMethod
     public void beforeEachMethod(){
         System.out.println("I execute before each method");
