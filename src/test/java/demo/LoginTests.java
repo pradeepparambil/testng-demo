@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.*;
 
+//@Listeners({TestNGListener.class})
 public class LoginTests {
     @BeforeSuite()
     public void beforeSuite(){
